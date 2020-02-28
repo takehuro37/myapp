@@ -1,0 +1,42 @@
+header.masthead {
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(7rem + 68px);
+  padding-bottom: 7rem;
+  background: image-url("image1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: 100%;
+  .masthead-content {
+    z-index: 1;
+    position: relative;
+    .masthead-heading {
+      font-size: 4rem;
+    }
+    .masthead-subheading {
+      font-size: 2rem;
+    }
+  }
+  .bg-circle {
+    z-index: 0;
+    position: absolute;
+    border-radius: 100%;
+    background: linear-gradient(0deg, $primary 0%, $secondary 100%);
+  }
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: calc(10rem + 100px);
+    padding-bottom: 10rem;
+    .masthead-content {
+      .masthead-heading {
+        font-size: 6rem;
+      }
+      .masthead-subheading {
+        font-size: 4rem;
+      }
+    }
+  }
+}
