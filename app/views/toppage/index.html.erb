@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
     <div class="container">
       <i class="fas fa-fish"></i>
-      <a class="navbar-brand " href="#">スグ食べ</a>
+      <a class="navbar-brand " href="/toppage">スグ食べ</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -42,7 +42,9 @@
           <h5>×</h5>
           <label class="sr-only" for="inlineFormInputName2">人数</label>
           <input type="text" class="form-control mx-4" id="inlineFormInputName2" placeholder="人数">
-          <button type="submit" class="btn btn-primary ml-2">検索</button>
+          <button type="submit" class="btn btn-primary mx-2">
+            <%= link_to "検 索", "/toppage/show" ,class:"submit-btn"%>
+          </button>
         </form> 
       </div>
     </div>
